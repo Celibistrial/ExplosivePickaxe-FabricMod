@@ -1,2 +1,2 @@
 Contains source code and jar file
-Compiled jar file in test_mod\test mod\build\libs\
+Compiled jar file in \build\libs\
