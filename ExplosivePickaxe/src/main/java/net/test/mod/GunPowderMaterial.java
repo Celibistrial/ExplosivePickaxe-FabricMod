@@ -8,7 +8,7 @@ public class GunPowderMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 100;
+        return 200;
     }
 
     @Override

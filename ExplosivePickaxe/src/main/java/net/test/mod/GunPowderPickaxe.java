@@ -16,6 +16,8 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
+import java.util.Random;
+
 public class GunPowderPickaxe extends PickaxeItem {
     protected GunPowderPickaxe(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
 
@@ -27,10 +29,11 @@ public class GunPowderPickaxe extends PickaxeItem {
         if (!world.isClient) {
 
             TntEntity tntEntity = new TntEntity(EntityType.TNT,world);
-            user.sendMessage(new LiteralText(String.valueOf(user.getHorizontalFacing())), false);
+
             switch (String.valueOf(user.getHorizontalFacing())){
                 case "south":
                     tntEntity.updatePosition(user.getX(), user.getY(),user.getZ()+2);
+
                     break;
                 case "north":
                     tntEntity.updatePosition(user.getX(), user.getY(),user.getZ()-2);
@@ -44,7 +47,11 @@ public class GunPowderPickaxe extends PickaxeItem {
 
             }
             //itemStack.damage(2,0.7f, ServerPlayerEntity);
-            Item item = itemStack.getItem();
+            Random r = new Random();
+
+            itemStack.setDamage(itemStack.getDamage()+1);
+
+
             world.spawnEntity(tntEntity);
         }
         return TypedActionResult.success(itemStack, world.isClient());
