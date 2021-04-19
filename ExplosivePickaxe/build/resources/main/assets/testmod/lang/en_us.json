@@ -1,0 +1,4 @@
+{
+    "item.testmod.fabric_item" : "FabricItem",
+    "block.testmod.fabric_block" : "CeliBlock"
+}
