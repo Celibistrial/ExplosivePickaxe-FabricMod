@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " D ",
+    " D "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:tnt"
+    },
+    "D": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item" : "testmod:gunpowder_pickaxe"
+  },
+  "group": "TOOLS"
+}
