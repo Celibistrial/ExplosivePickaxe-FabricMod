@@ -1,2 +1,2 @@
-# ExplosivePickaxe-FabricMod
-A basic fabric mod with a pickaxe that spawns tnt
+# FabricMod
+My fabric mods(includes source code and jar file)
