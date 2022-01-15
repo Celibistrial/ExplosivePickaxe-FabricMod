@@ -1,2 +1,2 @@
-# FabricMod
-My fabric mods(includes source code and jar file)
+# A really bad mod 
+My first mod
